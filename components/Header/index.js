@@ -27,11 +27,10 @@ function Header() {
     date.classList.add('date');
     tempature.classList.add('temp');
 
-    const degree = '&#8457;';
 
     date.textContent = 'SMARCH 28, 2019';
     title.textContent = 'Lambda Times';
-    tempature.textContent = '98';
+    tempature.textContent = '98°';
 
     return header;
 }
