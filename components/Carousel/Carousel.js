@@ -29,18 +29,25 @@ function Carousel(){
   const rightBttn = document.createElement('div');
 
   carousel.append(leftBttn, img0, img1, img2, img3, rightBttn);
+/*  carousel.appendChild(leftBttn);
+ carousel.appendChild(img0);
+ carousel.appendChild(img1);
+ carousel.appendChild(img2);
+ carousel.appendChild(img3);
+ carousel.appendChild(rightBttn); */
   carousel.classList.add('carousel');
   leftBttn.classList.add('left-button');
   rightBttn.classList.add('right-button');
 
-  img0.src = "/assets/carousel/mountains.jpeg"
-  img1.src = "/assets/carousel/computer.jpeg"
-  img2.src = "/assets/carousel/trees.jpeg"
-  img3.src = "/assets/carousel/turntable.jpeg"
+  img0.src = "../assets/carousel/mountains.jpeg"
+  img1.src = "../assets/carousel/computer.jpeg"
+  img2.src = "../assets/carousel/trees.jpeg"
+  img3.src = "../assets/carousel/turntable.jpeg"
 
 
   return carousel;
 }
 
 const carContainer = document.querySelector('.carousel-container');
+console.log(carContainer);
 carContainer.appendChild(Carousel());
